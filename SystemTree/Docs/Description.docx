@@ -1,0 +1,116 @@
+Adda System:
+
+MENU: 
+
+Reconhecer usuário: email e senha
+
+Informar tamanho da árvore de arquivos visualmente
+listagem de módulos. Mostrar nome do módulo, versão e icone. 
+
+receber mensagens automáticas dos modulos. 
+enviar mensagens automáticas para os modulos.
+
+
+    CONTATOS ----- gerenciador da lista de contatos do google
+    MANAGER ------ gerenciador da agenda do google
+    BIBLIO ------- gerenciador da biblioteca pessoal no google
+    PROJECTS ----- gerenciador de projetos no drive
+    FINANCE ------ reprodução das planilhas financeiras
+    CREATIVE ----- ferramentas de criação +++
+        MUS1K ---- edição e composição de partituras midi
+    STATUS ------- chartviewer dos parametros pessoais.
+
+    CONFIG ------- configurações do sistema. 
+
+
+
+--------------------------------------------------------------------
+classes menu:{
+
+    user {
+        email: String
+        key: String
+        permissions: []
+        googlekey: []
+    }
+    + informação pessoal from contatos { ... }
+
+    modulos {
+        name: String
+        adress: String  (dentro da árvore de dados)
+        icon: String
+        version: Float
+        lastAcess: Date
+        size: Integer (tamanho na árvore de dados)
+    }
+
+    mensagens {
+        from: {modulo}
+        to: {modulo}
+        content: {obj}
+    }
+}
+--------------------------------------------------------------------
+classes contatos:{
+    Person{
+        name: String
+        lastName: String
+        dateOfBirth: Date
+        Signo(): String 
+        email: String
+        telephone: String
+        picture(): img (take the instagram pic)
+    }
+
+    + Adress{
+        country: String
+        state(): String
+        city(): String
+        CEP: integer
+        bairro(): String
+        street(): String
+        number: integer 
+    }
+
+    + Social{
+        instagram: String
+        facebook: String
+        twitter: String
+    }
+
+    + Professional{
+        Vulgo: String
+        Area: String
+        website: String
+        spotfy: String
+        soundcloud: String
+        behance: String
+        linkedin: String
+        youtube: String
+        tiktok: String
+    }
+
+    + Client{
+        projetos: []
+    }
+}
+
+--------------------------------------------------------------------
+classes manager:
+
+--------------------------------------------------------------------
+classes biblio
+
+--------------------------------------------------------------------
+classes projects
+
+--------------------------------------------------------------------
+classes finance
+
+--------------------------------------------------------------------
+classes creative
+
+--------------------------------------------------------------------
+classes status
+
+--------------------------------------------------------------------

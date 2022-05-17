@@ -1,0 +1,51 @@
+<!--?Index HTML of MUS1K module--> 
+<!--Created at 06/05/2022 by: Giovani Imperatrice--> 
+
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--FAV ICON-->
+    <link rel="icon" type="image/x-icon" href="Favicon.png">
+    <!--Import Section-->
+    <!--*Links de Script-->
+    <script type="module" src="Code/js/Main.js"></script> 
+    <script type="module" src="Code/js/util_v1.5.js"></script>
+    <!--*Links de Estilo-->
+    <link rel="stylesheet" href="Code/css/stylesheet.css">
+    <link rel="stylesheet" href="../../Libs/CSS/Elements.css">
+    <title>MUS1K</title>
+</head>
+<body>
+    <div style="border: 2px solid var(--moduleCor30); text-align: center; padding: 50px; margin: 50px">
+        <div>   
+            <h1>Chord Finder</h1>
+            <h3>Selecione as notas desejadas</h3>
+            <h3>e o programa te diz o nome do acorde</h3>
+        </div>
+        <div style="text-align: center; display: inline-block;">
+            <input id="acorde_input" class="elements_basic_input" type="number" placeholder="Número das notas aqui" style="padding-top: 30px;">
+            <div style=" margin: 100px; height: 300px; width: 200px; border: 2px solid var(--moduleCor30); filter:brightness(0.5);">
+                <p id="display" style="font-size: 7rem; color:var(--moduleCorWt)">A<sup style="color:var(--moduleCor20);font-size: 3rem;">lala</sup></p>
+
+            </div>
+            <a id="botão" href="#" class="elements_basic_button" onclick="getValueInput()">
+                <span>Calcular</span>  
+            </a>
+
+            <script>
+                const getValueInput = () => {
+                 let inputValue = document.getElementById("acorde_input").value;
+                 Music.chord()
+                 document.getElementById("display").innerHTML = inputValue;
+}
+            </script>
+        </div>
+        
+    </div>
+</body>
+
+</html>
+

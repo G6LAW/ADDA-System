@@ -1,0 +1,43 @@
+/*? Main Javascript of {nome} module  */
+/* Created at xx/xx/xxxx by: Giovani Imperatrice */ 
+
+:root {
+    /* Definição de cores da Página Proncipal */
+     --moduleCor60: rgb(68, 255, 68); /*? Cor 60% (textos) */
+     --moduleCor30: #000; /*? Cor 30% (elementos)*/
+     --moduleCor20: #000; /*? Cor 20% (parte b dos elementos)*/
+     --moduleCor10: #000; /*? Cor 10% (detalhes)*/
+     --moduleCorBg: #000; /*? Cor Fundo */
+     --moduleCorWt: #fff; /*? Cor Branco */
+    }
+    
+*, *::before, *::after {
+/* Reset dos parametros */
+    color: var(--moduleCor60);
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-weight: normal;
+}
+
+/*! Dispositivo móvel (425px and down)-------------------------------- */
+@media (max-width: 425px) {
+
+    }   
+/*! Tablet (426px and up)--------------------------------------------- */
+@media (min-width: 426px) {
+
+    }    
+/*! Laptop P (769px and up)------------------------------------------- */
+@media (min-width: 769px) {
+
+    }
+/*! Desktop (1025px and up)------------------------------------------- */
+@media (min-width: 1025px) {
+
+    }
+/*! Versão para TV 4K(3840px and up)---------------------------------- */
+@media (min-width: 3840px) {
+
+    }

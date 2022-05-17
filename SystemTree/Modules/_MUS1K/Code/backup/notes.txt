@@ -1,0 +1,41 @@
+Anotações de intervalos para consulta:
+
+Triades:
+"dim"    --- 3, 3 >  6  -  (2x3)(1x6)                      ok
+"m"      --- 3, 4 >  5  -  (1x3)(1x4)(1x5) .               ok
+"M"      --- 4, 3 >  5  -  (1x3)(1x4)(1x5) .               ok
+"Aum"    --- 4, 4 >  4  -  (3x4)                           ok
+"Sus2"   --- 2, 5 >  5  -  (1x2)(2x5)      ..              ok
+"Sus4"   --- 5, 2 >  5  -  (1x2)(2x5)      ..              ok
+"4th"    --- 5, 5 >  2  -  (1x2)(2x5)      ..              ok
+"4th+"   --- 6, 6 >  0  -  (1x0)(2x6)                      ok 
+"5th"   --- 7, 7 > -2  -  (1x-2)(2x7)                      ok
+
+Tetrades:
+
+Diminutos:
+"dim7"      --- 3, 3, 4 >2  - (1x2)(2x3)(1x4).          > ok ERRO   3333 MODELO ANTERIOR CORRETO
+"dim7(b-5)" --- 3, 3, 5 >1  - (1x1)(2x3)(1x5)             ok ERRO   3342 MODELO ANTERIOR CORRETO
+
+Menores:
+"m6"        --- 3, 4, 2 >3  - (1x2)(2x3)(1x4) .         > ok OK
+"m7"        --- 3, 4, 3 >2  - (1x2)(2x3)(1x4) .         >    OK
+"m7+"       --- 3, 4, 4 >1  - (1x1)(1x3)(2x4) ..          ok OK
+
+Maiores:
+"M6"        --- 4, 3, 2 >3  - (1x2)(2x3)(1x4) .         >    OK
+"M7"        --- 4, 3, 3 >2  - (1x2)(2x3)(1x4) .         > ok OK
+"M7+"       --- 4, 3, 4 >1  - (1x1)(1x3)(2x4) ..          ok OK
+
+Aumentados:
+"Aum"       --- 4, 4, 3 >1  - (1x1)(1x3)(2x4) ..          ok ERRO  4422 
+Suspensos:
+"Sus2m7"   --- 2, 5, 3 >2   - (2x2)(1x3)(1x5) ...         ok OK
+"Sus4m7"   --- 5, 2, 3 >2   - (2x2)(1x3)(1x5) ...         ok OK
+"Sus27+"   --- 2, 5, 4 >1   - (1x1)(1x2)(1x4)(1x5) ....   ok OK
+"Sus47+"   --- 5, 2, 4 >1   - (1x1)(1x2)(1x4)(1x5) ....   ok OK
+
+Outros:
+"4th7"     --- 5, 5, 5 >-3     - (1x3)(3x5)               ok OK
+"4th+7"    --- 6, 6, 6 >-6     - (1x6)(3x6)               ok OK
+"5th7"     --- 7, 7, 7 >-3     - (1x3)(3x7)               ok OK

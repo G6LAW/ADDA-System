@@ -1,0 +1,235 @@
+/*! PATTERN TEXT------------------------------------------------------*/
+        ::selection {
+            color: var(--moduleCorBg);
+            background-color: var(--moduleCor10);
+        }
+    /** Títulos */ 
+        h1 { /* Título Prioncipal*/
+            color: var(--moduleCor60);
+            font-size: 4rem;
+            filter: brightness(1.7);
+
+            text-decoration-style: solid;
+
+            text-transform: uppercase;
+            font-weight: bold;
+            padding-top: 0.8rem;
+        }
+        h2 { /* Título Secundário*/
+            color: var(--moduleCor60);
+            font-size: 3rem;
+            filter: brightness(1.4);
+            text-transform: capitalize;
+            letter-spacing: 1rem;
+        }
+        h3 { /* Subtítulo*/
+            color: var(--moduleCor60);
+            font-size: 1.5rem;
+            filter: saturate(40%);
+            text-transform: uppercase;
+            letter-spacing: 0.2rem;
+            font-style: italic;
+        }
+        h4 { /* Título de Seção*/
+            color: var(--moduleCor60);
+            font-size: 2rem;
+            filter: saturate(200%) contrast(150%);
+            text-transform: uppercase;
+            letter-spacing: 0.2rem;
+
+
+        }
+        h5 { /* Título de Seção*/
+            color: var(--moduleCor60);
+            font-size: 1.5rem;
+            filter: saturate(200%) contrast(150%);
+            text-transform: uppercase;
+            letter-spacing: 0.2rem;
+
+        }
+        h6 { /* Título de Seção*/
+            color: var(--moduleCor60);
+            font-size: 1.2rem;
+            filter: saturate(200%) contrast(150%);
+            text-transform: uppercase;
+            letter-spacing: 0.2rem;
+        }
+
+    /** Paragrafos */ 
+        p {
+            color: var(--moduleCor60);
+        }
+
+    /** Links */
+        a {
+            color: var(--moduleCor30);
+            text-decoration: none;
+        }
+        a:active {
+            color: var(--moduleCor60);
+            filter: brightness(1.5);
+        }
+        a:visited {
+            color: var(--moduleCor10);
+        }
+
+    /** Code */ 
+        code {
+            color: var(--moduleCor20);
+
+            padding: 2rem;
+        }
+
+    /** Tabelas */
+        table {
+            padding: 1rem;
+            border: 1px solid var(--moduleCor60);
+        }
+        th {
+            padding: 0.5rem;
+            color: var(--moduleCor30);
+            font-weight: bold;
+        }
+        td {
+            padding: 0.5rem;
+        }
+
+
+
+/*! BOTÕES -----------------------------------------------------------*/
+    /** basic_button */
+        .elements_basic_button {
+            background: var(--moduleCorBg);
+            border: 2px solid;
+            font: inherit;
+            line-height: 0.5em;
+            margin: 0.2em;
+            padding: 1em 2em;
+            text-decoration: none;
+            border-color: var(--moduleCor30);
+            color: var(--moduleCor30);
+            filter: brightness(0.8);
+            transition: 0.09s;
+            display: inline-block;
+            box-shadow: 0 0.25em  var(--moduleCor30);
+            transform:translateY(-0.25em)
+        }
+        .elements_basic_button:hover,
+        .elements_basic_button:focus {
+            border-color: var(--moduleCor30);
+            color: var(--moduleCorWt);
+            filter: brightness(1);
+            
+        }
+        .elements_basic_button:active {
+            box-shadow: 0 0em  var(--moduleCor30);
+            transform:translateY(0.0em);
+            color: var(--moduleCorWt);
+            filter: brightness(1.4);
+        }
+    
+
+/*! PROGRESS -----------------------------------------------------------*/    
+
+    /** basic_progress */
+        .elements_basic_progress::-webkit-progress-bar {
+            background-color: var(--moduleCorBg);
+            border: 2px solid;
+            border-color: var(--moduleCor30);
+        }
+
+        .elements_basic_progress::-webkit-progress-value {
+            background-color: var(--moduleCor30); 
+        }
+
+/*! INPUT -----------------------------------------------------------*/    
+    /** basic_input */
+        .elements_basic_input {
+            background: var(--moduleCorBg);
+            border-bottom: 2px solid;
+            border-color: var(--moduleCor30);
+            outline: none;
+            caret-color: var(--moduleCor20);
+            color: var(--moduleCor60);   
+            margin-bottom: 0.4rem;
+        }
+        .elements_basic_input::placeholder {
+            color: var(--moduleCor60);
+            filter: saturate(40%) brightness(0.5)
+        }
+        .elements_basic_input::-webkit-outer-spin-button,
+        .elements_basic_input::-webkit-inner-spin-button {
+          -webkit-appearance: none;
+          margin: 0;
+        }        
+
+    
+/*! TEXTAREA -----------------------------------------------------------*/   
+    /** basic_textarea */
+        .elements_basic_textarea {
+            background: var(--moduleCorBg);
+            border-color: var(--moduleCor30);
+            outline: none;
+            caret-color: var(--moduleCor20);
+            color: var(--moduleCor60); 
+            filter: brightness(1.4);
+            
+        }
+        .elements_basic_form::placeholder {
+            color: var(--moduleCor60);
+            filter: saturate(40%) brightness(0.5)
+        }
+
+/*! DIALOG -------------------------------------------------------------*/   
+    /** basic_textarea */
+    .elements_basic_dialog {
+        transform: translate(-50%, -50%);
+        padding: 20px;
+        border: 0;
+        box-shadow: 0 0 0.5em var(--moduleCor30);
+        color: var(--moduleCor60);
+        filter: brightness(1);
+        background-color: var(--moduleCorBg);
+        position: fixed;
+        top: 50%;
+        left: 50%;
+
+
+    }
+    .elements_basic_dialog[open] {
+        animation: slide-up 0.4s ease-out;
+    }
+    @keyframes slide-up {
+        0% {
+          opacity: 0;
+          filter: blur(2);
+          transform: translate(-50%,calc(-50% + 15px));
+        }
+        
+        100% {
+          transform: translate(-50%, -50%);
+          opacity: 1;
+          filter: blur(0);
+        }
+      }
+
+/*! FORM -----------------------------------------------------------*/    
+    /** basic_form */
+    .elements_basic_form {
+        text-align: center;
+        background: var(--moduleCorBg);
+        border: 1px solid;
+        border-color: var(--moduleCor30);
+        outline: none;
+        caret-color: var(--moduleCor20);
+        color: var(--moduleCor60);   
+    }
+    .elements_basic_form::placeholder {
+        color: var(--moduleCor60);
+        filter: saturate(40%) brightness(0.5)
+    }
+    .elements_basic_form::-webkit-outer-spin-button,
+    .elements_basic_form::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }        
