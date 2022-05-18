@@ -5,7 +5,7 @@ Personal AI Assistent
 >ADDA System is a web based creation to help personal and professional improvement. 
 >It must be acessible from web-browsers and in the future from Apps. It have modules from different areas, 
 >The main modules are:
->    * DASHBOARD: Use to see summaries of other modules, as acess them.
+>    * DASHBOARD: Use to see summaries of other modules, as access them.
 >    * PROJECTS: Manage projects classified by classes PE, AR, ES, IT and ED; and specific areas. 
 >    * CONTACTS: Assign contacts from google and connect them in projects. More information than google's are avaliable here.
 >    * MUS1K: Padronize and organize music sheets, creating chords in letters and being able to advise about progressions. It also exports MIDI files.
